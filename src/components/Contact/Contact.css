@@ -153,3 +153,39 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 25px blacka(201, 161, 106, 0.3);
 }
+/* RESPONSIVE CONTACT */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .contact-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-container {
+    padding: var(--space-lg);
+  }
+  
+  .contact-details {
+    gap: var(--space-md);
+  }
+  
+  .contact-item {
+    gap: var(--space-sm);
+  }
+  
+  .contact-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}

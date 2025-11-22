@@ -115,3 +115,40 @@
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(201, 161, 106, 0.3);
 }
+/* RESPONSIVE SERVICES */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    max-width: 500px;
+  }
+  
+  .service-card {
+    min-height: 160px;
+    padding: var(--space-lg);
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: var(--space-xl) 0;
+  }
+  
+  .services-header {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .service-card {
+    min-height: 140px;
+    padding: var(--space-md);
+  }
+  
+  .gold-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

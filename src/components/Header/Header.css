@@ -78,3 +78,35 @@
   background: var(--color-accent);
   transform: scale(1.1);
 }
+/* RESPONSIVE HEADER */
+@media (max-width: 768px) {
+  .nav {
+    gap: var(--space-lg);
+  }
+  
+  .nav a {
+    font-size: 12px;
+  }
+  
+  .header-contact {
+    display: none;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    gap: var(--space-md);
+  }
+  
+  .nav a {
+    font-size: 11px;
+  }
+  
+  .header {
+    padding: var(--space-sm) 0;
+  }
+}

@@ -221,3 +221,44 @@
     animation: scrollHorizontal 40s linear infinite;
   }
 }
+/* RESPONSIVE FEATURES */
+@media (max-width: 768px) {
+  .features-scroll-track {
+    animation: scrollHorizontal 8s linear infinite;
+    gap: var(--space-md);
+  }
+  
+  .feature-card {
+    min-width: 250px;
+    padding: var(--space-lg);
+  }
+  
+  .features-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-scroll-track {
+    animation: scrollHorizontal 10s linear infinite;
+  }
+  
+  .feature-card {
+    min-width: 220px;
+    padding: var(--space-md);
+  }
+  
+  .features-title {
+    font-size: 1.8rem;
+  }
+  
+  .feature-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-gold-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

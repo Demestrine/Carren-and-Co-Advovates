@@ -123,3 +123,55 @@
   letter-spacing: 0.5px;
   font-weight: 600;
 }
+/* RESPONSIVE HERO */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-description {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  
+  .stats-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin: -40px auto 0;
+    padding: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 0 40px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-description {
+    font-size: 14px;
+  }
+  
+  .stats-card {
+    grid-template-columns: 1fr;
+    margin: -30px auto 0;
+    padding: var(--space-md);
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+}

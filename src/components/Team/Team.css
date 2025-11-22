@@ -156,3 +156,50 @@
     padding: var(--space-lg);
   }
 }
+/* RESPONSIVE TEAM */
+@media (max-width: 768px) {
+  .team-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+  
+  .team-title {
+    font-size: 2rem;
+  }
+  
+  .team-main-image {
+    width: 350px;
+    height: 450px;
+  }
+  
+  .image-placeholder {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-main-image {
+    width: 280px;
+    height: 350px;
+  }
+  
+  .image-placeholder {
+    width: 280px;
+    height: 350px;
+    font-size: 36px;
+  }
+  
+  .team-title {
+    font-size: 1.6rem;
+  }
+  
+  .team-subtitle {
+    font-size: 1rem;
+  }
+  
+  .team-description p {
+    font-size: 1rem;
+  }
+}

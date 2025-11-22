@@ -97,3 +97,30 @@
   background: rgba(201, 161, 106, 0.3);
   color: #ffffff; /* White text */
 }
+/* RESPONSIVE FOOTER */
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+  
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .footer-bottom {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: var(--space-xl) 0 var(--space-lg);
+  }
+  
+  .footer-columns {
+    gap: var(--space-md);
+  }
+}
