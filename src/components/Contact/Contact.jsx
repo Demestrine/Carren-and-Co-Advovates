@@ -3,8 +3,8 @@ import './Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    firstName: '',
+    lastName: '',
     phone: '',
     subject: '',
     message: ''
@@ -24,79 +24,95 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact" id="contact">
+    <section className="contact-section" id="contacts">
       <div className="container">
         <div className="contact-content">
           <div className="contact-info">
-            <h2>Get In Touch</h2>
-            <p>Ready to discuss your legal needs? Contact us for a free consultation.</p>
+            <h2 className="contact-title">
+              Contact us to get the best legal help
+            </h2>
             
             <div className="contact-details">
               <div className="contact-item">
-                <h4>📍 Address</h4>
-                <p>123 Legal Street<br />New York, NY 10001</p>
+                <span className="contact-icon">📞</span>
+                <div>
+                  <h4>Phone</h4>
+                  <p>(+29) 556-0764</p>
+                </div>
               </div>
               
               <div className="contact-item">
-                <h4>📞 Phone</h4>
-                <p>(555) 123-4567</p>
+                <span className="contact-icon">✉️</span>
+                <div>
+                  <h4>Email</h4>
+                  <p>contact@bylaw.com</p>
+                </div>
               </div>
               
               <div className="contact-item">
-                <h4>✉️ Email</h4>
-                <p>info@carrenadvocates.com</p>
+                <span className="contact-icon">📍</span>
+                <div>
+                  <h4>Office</h4>
+                  <p>123 Legal Avenue, Suite 400<br />New York, NY 10001</p>
+                </div>
               </div>
-              
-              <div className="contact-item">
-                <h4>🕒 Business Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM - 2:00 PM</p>
-              </div>
+            </div>
+            
+            <div className="social-links">
+              <button className="social-icon">f</button>
+              <button className="social-icon">t</button>
+              <button className="social-icon">in</button>
             </div>
           </div>
           
-          <div className="contact-form">
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
+          <div className="contact-form-container fade-in">
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
               </div>
               
               <div className="form-group">
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Your Phone"
+                  placeholder="Phone Number"
                   value={formData.phone}
                   onChange={handleChange}
+                  required
                 />
               </div>
               
               <div className="form-group">
-                <select name="subject" value={formData.subject} onChange={handleChange} required>
-                  <option value="">Select Practice Area</option>
-                  <option value="competition">Competition Law</option>
-                  <option value="real-estate">Real Estate Law</option>
-                  <option value="immigration">Immigration Law</option>
+                <select 
+                  name="subject" 
+                  value={formData.subject} 
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select Subject</option>
+                  <option value="corporate">Corporate Law</option>
                   <option value="family">Family Law</option>
-                  <option value="employment">Employment Law</option>
-                  <option value="healthcare">Healthcare Law</option>
+                  <option value="real-estate">Real Estate</option>
+                  <option value="mediation">Mediation</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -104,7 +120,7 @@ const Contact = () => {
               <div className="form-group">
                 <textarea
                   name="message"
-                  placeholder="Your Message"
+                  placeholder="Describe your legal problem"
                   rows="5"
                   value={formData.message}
                   onChange={handleChange}
@@ -112,7 +128,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               
-              <button type="submit" className="btn">Send Message</button>
+              <button type="submit" className="submit-btn">Send Message</button>
             </form>
           </div>
         </div>

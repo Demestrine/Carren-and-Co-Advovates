@@ -1,52 +1,80 @@
 .header {
-  background: var(--primary-color);
-  color: var(--white);
-  padding: 1rem 0;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
+  background: transparent;
+  padding: var(--space-md) 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(15, 17, 19, 0.95);
+  backdrop-filter: blur(10px);
+  padding: var(--space-sm) 0;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
 }
 
-.logo h2 {
-  color: var(--secondary-color);
-  margin: 0;
-  font-size: 1.8rem;
+.logo {
+  font-family: var(--font-serif);
+  color: var(--color-accent);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: var(--space-xl);
 }
 
 .nav a {
-  color: var(--white);
+  color: #b9b6b4;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 14px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
 .nav a:hover {
-  color: var(--secondary-color);
+  color: var(--color-accent);
 }
 
-.consultation-btn {
-  background: var(--secondary-color);
-  color: var(--white);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: #efe6d8;
+}
+
+.phone {
+  font-size: 14px;
+}
+
+.phone-icon {
+  background: none;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.consultation-btn:hover {
-  background: #a07847;
+.phone-icon:hover {
+  background: var(--color-accent);
+  transform: scale(1.1);
 }

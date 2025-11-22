@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="logo">
-          <h2>Carren & Co Advocates</h2>
-        </div>
+        <div className="logo">BYLAW</div>
         <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#stories">Our Stories</a>
-          <a href="#practice-areas">Practice Areas</a>
-          <a href="#attorney">Attorney</a>
-          <a href="#cases">Case Studies</a>
-          <a href="#contact">Contact</a>
+          <a href="#main">Main</a>
+          <a href="#legal-areas">Legal Areas</a>
+          <a href="#why-us">Why us</a>
+          <a href="#team">Team</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contacts">Contacts</a>
         </nav>
-        <button className="consultation-btn">Free Consultation</button>
+        <div className="header-contact">
+          <span className="phone">(+254) 556-0764</span>
+          <button className="phone-icon">📞</button>
+        </div>
       </div>
     </header>
   );

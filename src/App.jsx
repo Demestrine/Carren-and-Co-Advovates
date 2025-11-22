@@ -1,15 +1,12 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import Stories from './components/Stories/Stories';
-import PracticeAreas from './components/PracticeAreas/PracticeAreas';
-import AttorneyProfile from './components/AttorneyProfile/AttorneyProfile';
-import CaseStudies from './components/CaseStudies/CaseStudies';
-import Footer from './components/Footer/Footer';
-// In your App.js, make sure to include Contact component:
+import Services from './components/Services/Services'; // Updated from Stories
+import Features from './components/Features/Features'; // Updated from PracticeAreas
+import Team from './components/Team/Team'; // Updated from AttorneyProfile
+import Testimonials from './components/Testimonials/Testimonials'; // Updated from CaseStudies
 import Contact from './components/Contact/Contact';
-
-// Then in the return statement, add <Contact /> before <Footer />
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -17,11 +14,11 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Stories />
-      <PracticeAreas />
-      <AttorneyProfile />
+      <Services />
+      <Features />
+      <Team />
+      <Testimonials />
       <Contact />
-      <CaseStudies />
       <Footer />
     </div>
   );

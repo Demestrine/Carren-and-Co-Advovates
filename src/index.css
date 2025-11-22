@@ -1,20 +1,58 @@
+:root {
+  /* DARK LUXURY Color Scheme */
+  --color-bg-dark: #0a0a0a;
+  --color-bg-charcoal: #111111;
+  --color-surface: #1a1a1a;
+  --color-accent: #c9a16a;
+  --color-text-muted: #8c8c8c;
+  --color-text-dark: #e5e5e5;
+  --color-text-light: #ffffff;
+  --color-border: #333333;
+  --color-card: #242424;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 64px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #1a365d;
-  --secondary-color: #b38b59;
-  --accent-color: #2d3748;
-  --text-color: #333;
-  --light-bg: #f8f9fa;
-  --white: #ffffff;
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  line-height: 1.6;
 }
 
-body {
-  font-family: 'Georgia', 'Times New Roman', serif;
-  line-height: 1.6;
-  color: var(--text-color);
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8915d;
 }

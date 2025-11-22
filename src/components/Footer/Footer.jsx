@@ -6,37 +6,48 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-section">
-            <h3>Carren & Co Advocates</h3>
-            <p>I proudly Fight For Your Rights with decades of legal expertise and commitment to justice.</p>
+          <div className="footer-main">
+            <div className="footer-logo">
+              <div className="logo">BYLAW</div>
+              <p className="copyright">
+                © 2024 BYLAW. All rights reserved.
+              </p>
+            </div>
+            
+            <div className="footer-columns">
+              <div className="footer-column">
+                <h4>Quick Links</h4>
+                <a href="#main">Main</a>
+                <a href="#legal-areas">Legal Areas</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#team">Team</a>
+              </div>
+              
+              <div className="footer-column">
+                <h4>Practice Areas</h4>
+                <a href="#corporate">Corporate Law</a>
+                <a href="#family">Family Law</a>
+                <a href="#real-estate">Real Estate</a>
+                <a href="#mediation">Mediation</a>
+              </div>
+              
+              <div className="footer-column">
+                <h4>Contacts</h4>
+                <p>123 Legal Avenue</p>
+                <p>Suite 400</p>
+                <p>New York, NY 10001</p>
+                <p>(+29) 556-0764</p>
+              </div>
+            </div>
           </div>
           
-          <div className="footer-section">
-            <h4>Quick Links</h4>
-            <a href="#home">Home</a>
-            <a href="#practice-areas">Practice Areas</a>
-            <a href="#attorney">Our Attorney</a>
-            <a href="#cases">Case Studies</a>
+          <div className="footer-bottom">
+            <div className="footer-social">
+              <button className="social-icon">f</button>
+              <button className="social-icon">t</button>
+              <button className="social-icon">in</button>
+            </div>
           </div>
-          
-          <div className="footer-section">
-            <h4>Contact Info</h4>
-            <p>📍 123 Legal Street, New York, NY 10001</p>
-            <p>📞 (555) 123-4567</p>
-            <p>✉️ info@carrenadvocates.com</p>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Practice Areas</h4>
-            <p>• Competition Law</p>
-            <p>• Real Estate Law</p>
-            <p>• Immigration Law</p>
-            <p>• Family Law</p>
-          </div>
-        </div>
-        
-        <div className="footer-bottom">
-          <p>&copy; 2024 Carren & Co Advocates. All rights reserved. | www.DownloadNewThemes.com</p>
         </div>
       </div>
     </footer>

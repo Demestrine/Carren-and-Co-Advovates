@@ -1,48 +1,99 @@
 .footer {
-  background: var(--primary-color);
-  color: var(--white);
-  padding: 3rem 0 1rem;
+  background: var(--color-bg-dark);
+  padding: var(--space-xxl) 0 var(--space-xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.footer-content {
+.footer-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-xxl);
+  margin-bottom: var(--space-xl);
 }
 
-.footer-section h3 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.footer-logo .logo {
+  font-family: var(--font-heading); /* Lora for logo */
+  color: var(--color-accent);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
 }
 
-.footer-section h4 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
+.footer-column h4 {
+  color: #ec4899;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-lg);
+  font-weight: 600;
+  font-family: var(--font-heading); /* Lora for footer headings */
 }
 
-.footer-section p {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-  color: var(--white);
+.footer-column a, .footer-column p {
+  font-family: var(--font-body); /* Open Sans for footer text */
+  font-weight: 400;
 }
 
-.footer-section a {
+.copyright {
+  font-family: var(--font-body); /* Open Sans for copyright */
+  font-weight: 400;
+}
+
+
+   
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.footer-column h4 {
+  color: #ec4899; /* Pink headings */
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-lg);
+  font-weight: 600;
+}
+
+.footer-column a {
   display: block;
-  color: var(--white);
+  color: var(--color-text-muted);
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  font-size: 12px;
+  margin-bottom: var(--space-sm);
   transition: color 0.3s ease;
 }
 
-.footer-section a:hover {
-  color: var(--secondary-color);
+.footer-column a:hover {
+  color: #ec4899; /* Pink hover */
+}
+
+.footer-column p {
+  color: var(--color-text-muted);
+  font-size: 12px;
+  margin-bottom: var(--space-sm);
+  line-height: 1.4;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  padding-top: 1rem;
-  text-align: center;
-  color: rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: var(--space-lg);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.footer-social .social-icon {
+  border-color: #ec4899; /* Pink border */
+  color: #ec4899; /* Pink text */
+}
+
+.footer-social .social-icon:hover {
+  background: #ec4899; /* Pink background */
+  color: #ffffff; /* White text */
 }
