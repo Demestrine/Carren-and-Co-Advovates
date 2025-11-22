@@ -115,40 +115,42 @@
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(201, 161, 106, 0.3);
 }
-/* RESPONSIVE SERVICES */
+/* COMPACT MOBILE SERVICES */
 @media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    max-width: 500px;
-  }
-  
-  .service-card {
-    min-height: 160px;
-    padding: var(--space-lg);
-  }
-  
-  .section-title {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
   .services {
-    padding: var(--space-xl) 0;
+    padding: var(--space-xl) 0 !important;
   }
   
   .services-header {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-xl) !important;
+  }
+  
+  .services-grid {
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-xl) !important;
   }
   
   .service-card {
-    min-height: 140px;
-    padding: var(--space-md);
+    min-height: 120px !important;
+    padding: var(--space-md) !important;
+  }
+  
+  .service-icon {
+    margin-bottom: var(--space-md) !important;
   }
   
   .gold-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .service-title {
+    font-size: 14px !important;
+    margin-bottom: var(--space-sm) !important;
+  }
+  
+  .service-description {
+    font-size: 11px !important;
+    line-height: 1.3;
   }
 }

@@ -56,8 +56,8 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* WHITE BACKGROUND STATS CARD */}
-        <div className="stats-card" ref={statsRef}>
+        {/* STATS MOVED TO BOTTOM OF HERO SECTION */}
+        <div className="stats-card-bottom" ref={statsRef}>
           <div className="stat-item">
             <span className="stat-number">{Math.round(counters.years)}+</span>
             <span className="stat-label">Years of practice</span>

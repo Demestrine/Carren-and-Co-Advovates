@@ -27,4 +27,28 @@ html {
 
 .fade-in {
   animation: fadeInUp 0.8s ease-out;
+}/* Make everything more compact on mobile */
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 0 var(--space-md) !important;
+  }
+  
+  section {
+    padding: var(--space-xl) 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-sm) !important;
+  }
+  
+  section {
+    padding: var(--space-lg) 0 !important;
+  }
 }

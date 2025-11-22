@@ -156,50 +156,53 @@
     padding: var(--space-lg);
   }
 }
-/* RESPONSIVE TEAM */
+/* COMPACT MOBILE TEAM */
 @media (max-width: 768px) {
+  .team {
+    padding: var(--space-xl) 0 !important;
+  }
+  
   .team-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-    text-align: center;
-  }
-  
-  .team-title {
-    font-size: 2rem;
+    gap: var(--space-lg) !important;
   }
   
   .team-main-image {
-    width: 350px;
-    height: 450px;
+    width: 250px !important;
+    height: 300px !important;
   }
   
   .image-placeholder {
-    width: 350px;
-    height: 450px;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-main-image {
-    width: 280px;
-    height: 350px;
+    width: 250px !important;
+    height: 300px !important;
+    font-size: 32px !important;
   }
   
-  .image-placeholder {
-    width: 280px;
-    height: 350px;
-    font-size: 36px;
+  .team-info {
+    padding: 0 !important;
   }
   
   .team-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem !important;
+    margin-bottom: var(--space-sm) !important;
   }
   
   .team-subtitle {
-    font-size: 1rem;
+    font-size: 14px !important;
+    margin-bottom: var(--space-lg) !important;
+  }
+  
+  .team-description {
+    margin-bottom: var(--space-lg) !important;
   }
   
   .team-description p {
-    font-size: 1rem;
+    font-size: 14px !important;
+    line-height: 1.4;
+    margin-bottom: var(--space-md) !important;
+  }
+  
+  .team-contact-btn {
+    padding: 12px 24px !important;
+    font-size: 14px !important;
   }
 }

@@ -221,44 +221,48 @@
     animation: scrollHorizontal 40s linear infinite;
   }
 }
-/* RESPONSIVE FEATURES */
+/* COMPACT MOBILE FEATURES */
 @media (max-width: 768px) {
-  .features-scroll-track {
-    animation: scrollHorizontal 8s linear infinite;
-    gap: var(--space-md);
+  .features {
+    padding: var(--space-xl) 0 !important;
   }
   
-  .feature-card {
-    min-width: 250px;
-    padding: var(--space-lg);
+  .features-text {
+    margin-bottom: var(--space-xl) !important;
   }
   
   .features-title {
-    font-size: 2rem;
+    font-size: 1.5rem !important;
+    margin-bottom: var(--space-md) !important;
   }
-}
-
-@media (max-width: 480px) {
-  .features-scroll-track {
-    animation: scrollHorizontal 10s linear infinite;
+  
+  .features-subtitle {
+    font-size: 14px !important;
   }
   
   .feature-card {
-    min-width: 220px;
-    padding: var(--space-md);
-  }
-  
-  .features-title {
-    font-size: 1.8rem;
+    min-width: 200px !important;
+    padding: var(--space-md) !important;
   }
   
   .feature-icon-wrapper {
-    width: 50px;
-    height: 50px;
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: var(--space-md) !important;
   }
   
   .feature-gold-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px !important;
+    height: 18px !important;
+  }
+  
+  .feature-title {
+    font-size: 14px !important;
+    margin-bottom: var(--space-sm) !important;
+  }
+  
+  .feature-description {
+    font-size: 11px !important;
+    line-height: 1.3;
   }
 }

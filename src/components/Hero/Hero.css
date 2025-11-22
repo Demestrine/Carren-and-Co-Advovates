@@ -1,6 +1,6 @@
 .hero {
   background: var(--color-bg-dark);
-  padding: 120px 0 80px;
+  padding: 120px 0 40px; /* Reduced bottom padding since stats are at bottom */
   position: relative;
   overflow: hidden;
 }
@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.7; /* Darkish overlay */
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -26,7 +26,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(10, 10, 10, 0.6); /* Dark overlay */
+  background: rgba(10, 10, 10, 0.6);
 }
 
 .hero .container {
@@ -39,13 +39,11 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--space-xxl);
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--space-lg);
+  margin-bottom: var(--space-xxl); /* Space between content and stats */
 }
 
 .hero-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.05;
@@ -61,46 +59,19 @@
   max-width: 80%;
 }
 
-.hero-cta {
-  background: transparent;
-  border: 1px solid var(--color-accent);
-  color: var(--color-text-light);
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  height: 44px;
-}
-
-.hero-cta:hover {
-  background: var(--color-accent);
-  transform: translateY(-2px);
-}
-
-.hero-image {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-/* WHITE BACKGROUND STATS CARD */
-.stats-card {
+/* STATS CARD AT BOTTOM */
+.stats-card-bottom {
   background: #ffffff;
   border-radius: 12px;
   padding: var(--space-xl);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-lg);
-  max-width: 1000px;
-  margin: -60px auto 0;
-  position: bottom;
+  position: relative;
   z-index: 3;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   border: 1px solid #e5e7eb;
+  margin-top: var(--space-xxl); /* Space from content above */
 }
 
 .stat-item {
@@ -109,30 +80,33 @@
 
 .stat-number {
   display: block;
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
-  color: #111827; /* Dark text for white background */
+  color: #111827;
   margin-bottom: var(--space-xs);
 }
 
 .stat-label {
   font-size: 12px;
-  color: #6b7280; /* Muted text for white background */
+  color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
+  font-family: var(--font-body);
 }
+
 /* RESPONSIVE HERO */
 @media (max-width: 768px) {
   .hero {
-    padding: 100px 0 60px;
+    padding: 100px 0 30px;
   }
   
   .hero-content {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
     text-align: center;
+    margin-bottom: var(--space-xl);
   }
   
   .hero-title {
@@ -144,17 +118,17 @@
     font-size: 16px;
   }
   
-  .stats-card {
+  .stats-card-bottom {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
-    margin: -40px auto 0;
     padding: var(--space-lg);
+    margin-top: var(--space-xl);
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 80px 0 40px;
+    padding: 80px 0 20px;
   }
   
   .hero-title {
@@ -165,10 +139,10 @@
     font-size: 14px;
   }
   
-  .stats-card {
+  .stats-card-bottom {
     grid-template-columns: 1fr;
-    margin: -30px auto 0;
     padding: var(--space-md);
+    margin-top: var(--space-lg);
   }
   
   .stat-number {
