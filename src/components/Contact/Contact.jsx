@@ -34,7 +34,7 @@ const Contact = () => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <span className="contact-icon">📞</span>
+                <span className="contact-icon"></span>
                 <div>
                   <h4>Phone</h4>
                   <p>(+29) 556-0764</p>
@@ -42,7 +42,7 @@ const Contact = () => {
               </div>
               
               <div className="contact-item">
-                <span className="contact-icon">✉️</span>
+                <span className="contact-icon"></span>
                 <div>
                   <h4>Email</h4>
                   <p>contact@bylaw.com</p>
@@ -50,17 +50,16 @@ const Contact = () => {
               </div>
               
               <div className="contact-item">
-                <span className="contact-icon">📍</span>
+                <span className="contact-icon"></span>
                 <div>
                   <h4>Office</h4>
                   <p>123 Legal Avenue, Suite 400<br />New York, NY 10001</p>
                 </div>
               </div>
             </div>
-            
-          
+
           </div>
-          
+
           <div className="contact-form-container fade-in">
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">

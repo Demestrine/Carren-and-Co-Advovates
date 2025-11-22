@@ -20,14 +20,16 @@ const Team = () => {
           </div>
           
           <div className="team-info">
-            <span className="section-label">Our Team</span>
-            <h2 className="team-title">I'm Advocate Rubina Based in New York</h2>
-            <p className="team-subtitle">Attorney General and General Lovers</p>
+            <span className="section-label">Team</span>
+            <h2 className="team-title">Hi, I’m Advocate Carren Joseph</h2>
+            <p className="team-subtitle">Advocate of the High Court of Kenya</p>
             <div className="team-description">
               <p>
-                We are confident that I should provide advice from memberships to help them achieve their goals. 
-                We are confident that I should provide advice from memberships to help them achieve their goals. 
-                We are confident that I should provide advice from memberships to help them achieve their goals.
+                I lead this practice with a firm commitment to integrity, excellence, and client-centered legal service. Over the years, I have gained extensive experience across diverse areas of law, enabling me to provide strategic, practical, and results-oriented guidance to individuals, families, businesses, and institutions across Kenya.
+
+My approach blends deep legal knowledge with a clear understanding of the realities clients face in the Kenyan legal environment. I focus on offering solutions that are not only legally sound but also aligned with your goals and long-term interests.
+
+Every client I work with receives personalized attention, strong legal protection, and dedicated support to help them achieve their personal, professional, and commercial objectives. My mission is simple: to empower you with the right legal advice, represent your interests with excellence, and stand with you every step of the way.
               </p>
             </div>
             <button className="team-contact-btn">Contact Me</button>
