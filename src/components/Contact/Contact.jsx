@@ -58,11 +58,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="social-links">
-              <button className="social-icon">f</button>
-              <button className="social-icon">t</button>
-              <button className="social-icon">in</button>
-            </div>
+          
           </div>
           
           <div className="contact-form-container fade-in">

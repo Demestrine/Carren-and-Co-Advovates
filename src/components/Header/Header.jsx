@@ -24,10 +24,6 @@ const Header = () => {
           <a href="#reviews">Reviews</a>
           <a href="#contacts">Contacts</a>
         </nav>
-        <div className="header-contact">
-          <span className="phone">(+254) 556-0764</span>
-          <button className="phone-icon">📞</button>
-        </div>
       </div>
     </header>
   );

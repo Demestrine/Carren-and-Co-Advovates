@@ -32,7 +32,7 @@
 }
 
 .contact-icon {
-  background: #ec4899; /* Pink accent */
+  background: rgba(201, 161, 106, 0.3);
   width: 40px;
   height: 40px;
   border-radius: 6px;
@@ -64,8 +64,8 @@
 
 .social-icon {
   background: transparent;
-  border: 1px solid #ec4899; /* Pink border */
-  color: #ec4899; /* Pink text */
+  border: 1px solid rgba(201, 161, 106, 0.3);
+  color: rgba(201, 161, 106, 0.3);
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -79,7 +79,7 @@
 }
 
 .social-icon:hover {
-  background: #ec4899; /* Pink background */
+  background: rgba(201, 161, 106, 0.3);
   color: #ffffff; /* White text */
   transform: scale(1.1);
 }
@@ -124,8 +124,8 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: #ec4899; /* Pink focus */
+  outline: none,rgba(201, 161, 106, 0.3);
+  border-color: rgba(201, 161, 106, 0.3);
   box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
 }
 
@@ -136,8 +136,8 @@
 }
 
 .submit-btn {
-  background: #ec4899; /* Pink button */
-  color: #ffffff; /* White text */
+  background: rgba(201, 161, 106, 0.3);
+  color: black;
   border: none;
   padding: 14px 32px;
   border-radius: 6px;
@@ -149,7 +149,7 @@
 }
 
 .submit-btn:hover {
-  background: #db2777; /* Darker pink */
+  background: rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 8px 25px blacka(201, 161, 106, 0.3);
 }
